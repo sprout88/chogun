@@ -15,11 +15,14 @@ int main()
 	char* tok[100];
 	
 	int i=0;
+	
 	tok[i] = strtok(Gstr1,",");
+	
 	while(tok[i]!=NULL){
 		tok[i]=strtok(NULL,",");
 		i++;
 	}
+	
 	int j=0;
 	for(j=0;j<=100;j++){
 		printf("%s\n",tok[j]);
