@@ -66,6 +66,7 @@ int main()
     			strcpy(tempArr[i].tempStr,tok);
     			tok=strtok(NULL,",");
     			i++;
+    			
 			}
 		}
 	}
