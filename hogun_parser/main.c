@@ -3,14 +3,23 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "fileTextGetter.c"
+#include "location.h"
 
-#define DATA "data.txt" 
+#include "fopenCheck.c"
+#include "fileTextGetter.c"
+#include "GChecker.c"
+
+
+#define DATA "dataShortExample.txt" //읽을 파일명 
 #define RESULT "result.txt"
 
 
 
 int main()
 {
+	FILE* fp = (DATA,"rt");
+	fopenCheck(fp);
+	
+	
 		
 }
