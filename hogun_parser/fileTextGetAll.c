@@ -7,7 +7,7 @@
 char* fileTextGetAll(FILE* fp){
 	
 	char buffer[1000]="";
-	char str[1000]="";
+	static char str[1000]="";
 	
 	fgets(buffer,sizeof(buffer),fp);
 	
