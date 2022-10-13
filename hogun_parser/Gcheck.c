@@ -1,3 +1,5 @@
+//문자열이 GNGGA 로 시작하는지 체크해서 boolean 을 반환한다. 
+
 #include <stdio.h>
 #include <string.h>
 
