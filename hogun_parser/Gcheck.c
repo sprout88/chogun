@@ -1,8 +1,5 @@
-
-void print(){
-	puts("Hello World!");
-}
-
+#include <stdio.h>
+#include <string.h>
 
 int Gcheck(char* str){
 	
