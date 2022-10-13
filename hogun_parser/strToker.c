@@ -1,11 +1,17 @@
 #include <stdio.h>
 #include <string.h>
 
+
 int main(void){
+	char str[] = "Hello,World,Nice";
 	
-	char arr[][100] = {"Hello World","Im john","nice to meet you"}; //3행 100열 구조 
+	char* ptr;
 	
-	printf("%s\n",arr[0]); //0행0열을 s로 출력 : Hello World 
-	printf("%s\n",arr[1]); //0행1열을 s로 출력 :  
-	printf("%s\n",arr[2]); 
+	ptr = strtok(str,",");
+	while(ptr!=NULL)
+	{
+		printf("%s\n",ptr);
+		ptr = strtok(NULL,",");
+	}
+	return 0;
 }

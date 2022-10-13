@@ -6,5 +6,5 @@ typedef struct GNGGAstr{
 	}GNGGAstr;
 	
 		
-GNGGAstr gStr[1000]; 
+
 	

@@ -7,4 +7,4 @@
     	char altitudeStr[100];
 	}Location;
 	
-static Location l[1000];
+

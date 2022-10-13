@@ -5,6 +5,7 @@
 
 #include "location.h"
 #include "GNGGAstr.h"
+#include "StrArray.h"
 
 #include "fopenCheck.c"
 #include "fileTextGetAll.c"
@@ -27,10 +28,10 @@ int main()
 	puts("");
 	
 	char* strArray = fileTextGetArray(fp); //파일의 모든 텍스트를 str에 저장 //strArray, strArray+1, strArray2 가 각 줄의 문자열 
-	
-	char GNGGAstr[100]=""; 
-	
-	puts(strArray[0]+1);
+
+	strArray[0].str="hello";
+	puts(strArray[0].str);
+
 	
 	//GNGGAstr g[100]; //가져온 문자열 중, GNGGA로 시작하는 문자열만 저장하기 위한 g 구조체 
 	//Location location[100];
