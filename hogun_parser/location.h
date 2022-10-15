@@ -9,12 +9,11 @@
     	double average;
     	double min;
     	double max;
-    	
-    	bool isChecksum;
+
     	
 	}Location;
 	
-static Location l[10000];
+
 
 
 
