@@ -1,9 +1,12 @@
 #include <stdio.h>
+#include <string.h>
 
 #define NMEA_END_CHAR_1 '\n'
 #define NMEA_MAX_LENGTH 70
 
-nmea_get_checksum(const char *nmea_str)
+
+
+char* nmea_get_checksum(const char *nmea_str)
 {
     const char *n = NULL;
     int checksum = 0;
@@ -27,4 +30,5 @@ nmea_get_checksum(const char *nmea_str)
 
     return checksum;
 }
+
 
