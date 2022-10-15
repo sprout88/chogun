@@ -2,14 +2,16 @@
 문자열 읽어서 불러오기 o
 
 문자열을 줄별로 잘라서 배열에 저장하기 o
-origin_str 배열에 원본 문자열을 저장 
+origin_str 배열에 원본 문자열을 저장 o
 
-String 구조체 맴버:str 하나뿐인
-String strArray
-String GstrArray 선언
+
+String origin_arr[] 선언 o
+String GNGGA_arr[] 선언 o
 
 GNGGAcheck 함수 만들어서, strArray 의 원소인 문자열중에, GNGGA로 시작하는 문자열을 추출,
 그 추출한 문자열을 GstrArray에 저장
+
+--problem : 정적할당 한계보다 데이터가 큼 -> 동적할당 required
 
 GstrArray를 하나씩 꺼내서
 N, E 등의 알파벳을 기준으로 parsing 하는 함수를 작성 : charCheck()
@@ -20,4 +22,6 @@ Location 배열 l에 위도 경도 고도 를 저장
 
 l 배열을 읽어서 평균 등의 값을 계산
 
+george
+george!@
 
