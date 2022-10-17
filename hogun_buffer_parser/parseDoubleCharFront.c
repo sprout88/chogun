@@ -6,7 +6,7 @@ char* reverseString(char* str){
 	int size = (int)strlen(str);
 	//printf("size: %d\n",size/2);
 	
-	static char reversedStr[1000];
+	char reversedStr[1000]="";
 	strcpy(reversedStr,str);
 	
 	char temp; 
@@ -22,8 +22,8 @@ char* reverseString(char* str){
 
 
 char* parseDoubleCharFront(char* str,char c1, char c2){
-	static char extractedStr[1000]="";
-	static char reversedStr[1000];
+	char extractedStr[1000]="";
+	char reversedStr[1000]="";
 	
 	int i;
 	int j;
@@ -39,10 +39,11 @@ char* parseDoubleCharFront(char* str,char c1, char c2){
 				j--;
 				k++;
 			}
+			strcpy(reversedStr,reverseString(extractedStr));
+			return reversedStr;
 		}		
 	}
-	strcpy(reversedStr,reverseString(extractedStr));
-	return reversedStr;
+	
 }
 
 

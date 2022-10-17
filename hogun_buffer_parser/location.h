@@ -4,7 +4,16 @@ typedef struct Location{
 	char longitudeStr[1000];
 	char altitudeStr[1000];
 	
-	int latitude;
-	int longitude;
-	int altitude;
+	double latitude;
+	double longitude;
+	double altitude;
+	
+	
 }Location;
+
+typedef struct Temp{
+	double latitude;
+	double longitude;
+	double altitude;
+		
+};

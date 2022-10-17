@@ -10,6 +10,8 @@
 #include "GNGGAcheck.c"
 #include "parseDoubleCharFront.c"
 
+//#include "calculate.c"
+
 
 
 
@@ -44,6 +46,8 @@ int main(void){
 	char extractedStr[1000]="";
 	char registerStr[1000]="";
 	
+	char *pos=NULL; // for strtod
+	
 	int i=0;
 	//strcmp(extractedStr,registerStr)!=0
 	while(1){
@@ -59,17 +63,26 @@ int main(void){
 			strcpy(l.latitudeStr,parseDoubleCharFront(extractedStr,',','N'));
 			strcpy(l.longitudeStr,parseDoubleCharFront(extractedStr,',','E'));
 			strcpy(l.altitudeStr,parseDoubleCharFront(extractedStr,',','M'));
+			
+			l.latitude = strtod(l.latitudeStr,&pos);
+			l.longitude = strtod(l.longitudeStr,&pos);
+			l.altitude = strtod(l.altitudeStr,&pos);
+			
+			printf("latitude : %.7lf\n",l.latitude);
+			printf("longitude : %.7lf\n",l.longitude);
+			printf("altitude : %.7lf\n",l.altitude);			
+			
 						
-			printf("latitude : %s\n",l.latitudeStr);
-			printf("longitude : %s\n",l.longitudeStr);
-			printf("altitude : %s\n",l.altitudeStr);			
+			//printf("latitude : %s\n",l.latitudeStr);
+			//printf("longitude : %s\n",l.longitudeStr);
+			//printf("altitude : %s\n",l.altitudeStr);			
 			
 			strcpy(l.latitudeStr,"");
 			strcpy(l.altitudeStr,"");
 			strcpy(l.longitudeStr,"");
 		} 
 		else{
-			puts("don't write");	
+			puts("don't write");
 		}		
 		i++;
 	}
