@@ -2,7 +2,6 @@
 #include <string.h>
 
 
-
 char* reverseString(char* str){
 	int size = (int)strlen(str);
 	//printf("size: %d\n",size/2);
@@ -47,6 +46,7 @@ char* parseDoubleCharFront(char* str,char c1, char c2){
 }
 
 
+/*
 int main(){
 	
 	char* str = "$GNRMC,022426.80,A,3733.5415497,N,12659.6050888,E,0.010,,240822,,,R,V*09";
@@ -63,13 +63,5 @@ int main(){
 	strcpy(strExtracted,parseDoubleCharFront("$GNGGA,022426.80,3733.5415497,N,12659.6050888,E,4,12,0.50,49.027,M,18.475,M,0.8,0020*53",',','N'));
 	puts(strExtracted);	
 	
-	char* str3 = "123456789";
-	
-	
-	puts(reverseString(str3));
-	puts(str3);
-	
-	
-	
 }
-
+*/

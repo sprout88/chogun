@@ -37,13 +37,6 @@ int main()
 	
 	char* tok;
 	tok=strtok(origin_str,"$");
-	while(tok!=NULL){
-		strcpy(origin_arr[i].str,tok);
-		tok=strtok(NULL,"$");
-		//puts(tok);
-		//printf("%d¿˙¿Âµ !\n",i);
-		i++;
-	}
 	
 	//char* test1 = "$GNRMC,022427.20,A,3733.5415493,N,12659.6050908,E,0.019,,240822,,,R,V*06";
 	//char* test2 = "$GNGGA,022427.80,3733.5415487,N,12659.6050887,E,4,12,0.50,49.024,M,18.475,M,0.8,0020*5F";
