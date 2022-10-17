@@ -11,9 +11,9 @@ typedef struct Location{
 	
 }Location;
 
-typedef struct Temp{
-	double latitude;
-	double longitude;
-	double altitude;
-		
-};
+typedef struct LocationData{
+	double sum;
+	double subMax;
+	double subMin;
+	double avg;	
+}LocationData;
